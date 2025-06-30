@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exemplo QUEBRA LINHA </title>
+    <script type="text/javascript" src="javascript_jquery/jquery.js"></script>
+    <script type="text/javascript">
+        function funcao() {
+            var x;
+            var r=confirm("Escolha um valor!"); // Confirm serve para aparecer um alert com o botão de OK e CANCELAR //
+            if (r==true) {
+                x=("Você pressionou OK!");
+            } else {
+                x=("Você pressionou CANCELAR!");
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</head>
+<body>
+    <p> Clique no botão para executar exibir a caixa de confirmação. </p>
+    <button type="button" onclick="funcao()"> Clique aqui </button>
+    <p id="demo"></p>
+</body>
+</html>
