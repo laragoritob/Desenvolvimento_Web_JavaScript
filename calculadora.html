@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora </title>
+    <script>
+        function myFunction () {
+            var n1 = prompt("Digite o 1° número: ");
+            var n2 = prompt("Digite o 2° número: ");
+
+            if (n1 && n2 != null) {
+                var total = (n1 + n2);
+                document.getElementById("demo").innerHTML = total;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1> CALCULADORA </h1>
+    <p> Clique para exibir. </p>
+    <button onclick="myFunction()"> Calcular </button>
+    <p id="demo"></p>
+
+    <br><br>
+    
+    <center>
+    <address>
+        Lara Gorito Barbosa de Souza / Estudante / Técnico em Desenvolvimento de Sistemas
+    </address>
+    </center>
+</body>
+</html>

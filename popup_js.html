@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo ALERT</title>
+    <title> POP UP </title>
 </head>
 <body>
-    <script>
-        window.alert(5 + 6);
+    <script type="text/javascript">
+        var nome = prompt("Seu nome:");
+
+        if (nome != null && nome != "")
+            document.write("Oi " + nome);
+        else
+            document.write("Oi, anônimo!");
     </script>
 
     <br><br>

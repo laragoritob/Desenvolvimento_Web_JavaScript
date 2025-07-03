@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário Simples Validação </title>
+    <style>
+        form {
+            width: 500px;
+            margin: 20px auto;
+        }
+
+        fieldset {
+            padding: 30px;
+            border: solid 2px gray;
+        }
+
+        legend {
+            font-size: 24px;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            padding-right: 10px; 
+        }
+
+        input[type="text"] {
+            width: 314px;
+            height: 30px;
+        }
+
+        select {
+            margin-top: 20px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="form" id="meuForm">
+        <fieldset>
+            <legend>Exemplo Básico de Formulário</legend>
+            <label>Nome:*</label>
+            <input type="text" name="textname" id="textbox1">
+
+            <label>Cidade:</label>
+            <select name="cidades" id="cidades">
+                <option value=""> Selecione uma Cidade </option>
+                <option value="opção 1"> Joinville - SC </option>
+                <option value="opção 2"> Curitiba - PR </option>
+                <option value="opção 3"> Florianópolis - SC </option>
+                <option value="opção 4"> Porto Alegre - RS </option>
+                <option value="opção 5"> Petrópolis - RJ </option>
+            </select>
+
+            <p>
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" value="masculino"> Masculino </input>
+                <input type="radio" name="sexo" value="feminino"> Feminino </input>
+            </p>
+
+            <p>
+                <label>Rede Social:</label>
+                <input type="checkbox" name="rede" value="facebook"> Facebook </input>
+                <input type="checkbox" name="rede" value="twitter"> Twitter </input>
+                <input type="checkbox" name="rede" value="orkut"> Orkut </input>
+                <input type="checkbox" name="rede" value="msn"> MSN </input>
+                <input type="checkbox" name="rede" value="tiktok"> TikTok </input>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar" name="enviar" id="botaosub">
+            </p>
+        </fieldset>
+
+        <script type="text/javascript" src="validacao_form.js"></script>
+    </form>
+
+    <br><br>
+
+    <center>
+    <address>
+        Lara Gorito Barbosa de Souza / Estudante / Técnico em Desenvolvimento de Sistemas
+    </address>
+    </center>
+</body>
+</html>
